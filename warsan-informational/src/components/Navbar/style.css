@@ -1,0 +1,246 @@
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  margin-left: 8%;
+  margin-right: 7.8%;
+  margin-top: 1%;
+}
+
+.brand-container {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+}
+
+.brand-name {
+  color: #1082EB;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: bold;
+  font-size: 36px;
+  text-decoration: none;
+}
+
+.logo-img {
+  width: 75px;
+  height: 70px;
+  fill: #5EB5D7;
+  margin-top: 10%;
+}
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger-menu.open .bar {
+  background-color: white;
+}
+
+.hamburger-menu.open .close-icon {
+  display: block;
+}
+
+.bar {
+  width: 30px;
+  height: 4px;
+  background-color: #5EB5D7;
+  margin: 6px 0;
+}
+
+.close-icon {
+  display: none;
+  position: relative;
+  width: 30px;
+  height: 4px;
+  margin: 6px 0;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.close-icon span {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #5EB5D7;
+}
+
+.close-icon span:first-child {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.close-icon span:last-child {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+.centered-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.centered-links a {
+  color: black;
+  text-decoration: none;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.nav-list.open {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.nav-list li {
+  margin-bottom: 10px;
+}
+
+.nav-list a {
+  color: black;
+  text-decoration: none;
+}
+
+.nav-list li:hover {
+  color: blue;
+}
+
+.nav-list li:hover {
+  color: blue;
+}
+.nav-list li {
+  margin-bottom: 10px;
+  transition: color 0.3s;
+}
+
+.nav-list li:hover {
+  color: blue;
+}
+
+.centered-links a:hover {
+  background-color: #5EB5D7;
+  color: white;
+  border-radius: 10px;
+  padding: 4px 20px;
+  transition: background-color 0.3s, color 0.3s, padding 0.3s;
+}
+
+
+
+@media (max-width: 760px) {
+  .hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .navbar-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    margin-left: 5.5%;
+    margin-right: 3%;
+  }
+
+  .brand-container {
+    margin: 10px 0;
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    z-index: 1;
+  }
+
+  .nav-list.open {
+    display: flex;
+    text-align: left;
+  }
+
+  .centered-links {
+    display: block;
+    justify-content: center;
+    gap: 200px;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 1000px;
+    height: 1000px;
+  }
+
+  .nav-list li {
+    margin-bottom: 15px;
+  }
+
+  .nav-list a {
+    margin: 0;
+  }
+
+  .brand-container {
+    font-size: 24px;
+  }
+
+  .brand-name {
+    font-size: 30px;
+  }
+
+  .logo-img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .bar {
+    width: 20px;
+    height: 3px;
+    margin: 4px 0;
+  }
+
+  .close-icon {
+    width: 20px;
+    height: 3px;
+    margin: 4px 0;
+  }
+
+  .close-icon span {
+    height: 2px;
+  }
+}
+
+/* Media Queries for iPad Air */
+@media (max-width: 834px) {
+  .centered-links {
+    font-size: 16px;
+    margin-top: 2%;
+  }
+  .navbar-wrapper {
+    margin-left: 10.5%;
+    margin-right: 11%;
+  }
+}
+
+

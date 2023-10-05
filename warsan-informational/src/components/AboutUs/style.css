@@ -1,0 +1,119 @@
+.about {
+    background-color: #4B9EB8;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5%;
+  }
+  .aboutcards {
+    margin-top: 8%;
+    margin-bottom: 8%;
+    margin-left: 8%;
+    width: 65%;
+    background-color: white;
+    text-align: center;
+    margin-left: 17%;
+    padding: 20px;
+  }
+
+  .about-heading{
+    color: #1082EB;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+}
+  .about p {
+    text-align: center;
+    /* margin-left: 21%; */
+    margin-bottom: 5%;
+    font-size: 20px;
+  }
+  .about h1 {
+    font-size: 28px;
+    margin-top: 10px;
+  }
+  .aboutcards {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  .about p {
+    line-height: 1.5;
+  }
+  .aboutcards {
+    margin-top: 8%;
+    margin-bottom: 8%;
+    margin-right: 8%;
+    width: 67.3%;
+    background-color: white;
+    text-align: center;
+    margin-left: 17%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  @media (max-width: 1350px) {
+    .about {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+    .aboutcards {
+      margin-left: 5%;
+      width: 40%;
+      text-align: center;
+    }
+    .about p {
+      margin-left: 5%;
+      text-align: left;
+    }
+  }
+  @media (max-width: 1540px) {
+    .aboutcards {
+      margin-left: 10.8%;
+      width: 77.3%;
+      text-align: center;
+
+    }
+  }
+
+  @media(width: 1280px){
+    .about{
+        display: flex;
+        flex-direction: row;
+
+    }
+    .aboutcards{
+        /* width: 500px; */
+        margin-right: 50px;  
+        margin-left: 8.3%;
+        width: 35.2%;
+     
+    }
+  }
+
+  @media(width: 820px){
+    .about{
+        display: flex;
+        flex-direction: row;
+
+    }
+    .aboutcards{
+        width: 500px;
+        margin-right: 50px;  
+        margin-left: 8.5%;
+        width: 33.2%;
+     
+    }
+  }
+
+  @media(width: 1024px){
+    .about{
+        display: flex;
+        flex-direction: row;
+
+    }
+    .aboutcards{
+        width: 500px;
+        margin-right: 50px;  
+        margin-left: 8.5%;
+        width: 33.2%;
+     
+    }
+  }
+

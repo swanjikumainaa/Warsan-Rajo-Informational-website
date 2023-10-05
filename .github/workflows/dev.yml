@@ -1,0 +1,35 @@
+name: React.js CI/CD
+
+on:
+  push:
+    branches:
+      - dev
+  pull_request:
+    branches:
+      - dev
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '18'
+
+    - name: Install Dependencies
+      working-directory: warsan-informational
+      run: npm install
+
+    - name: Build
+      working-directory: warsan-informational
+      run: npm run build
+
+    - name: Run Tests
+      working-directory: warsan-informational
+      run: npm test
